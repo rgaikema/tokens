@@ -70,32 +70,41 @@
     }
   },
   "family": {
-    "work-sans": {
+    "worksans": {
       "value": "Work Sans",
       "type": "fontFamilies"
     }
   },
   "font": {
     "heading1": {
-      "value": {
-        "fontFamily": "Work Sans",
-        "fontSize": 34
+      "fontFamily": {
+        "value": "Work Sans",
+        "type": "fontFamily"
       },
-      "type": "typography"
+      "fontSize": {
+        "value": 34,
+        "type": "fontSize"
+      }
     },
     "heading2": {
-      "value": {
-        "fontFamily": "Work Sans",
-        "fontSize": 20
+      "fontFamily": {
+        "value": "Work Sans",
+        "type": "fontFamily"
       },
-      "type": "typography"
+      "fontSize": {
+        "value": 20,
+        "type": "fontSize"
+      }
     },
     "body": {
-      "value": {
-        "fontSize": 13,
-        "fontFamily": "Work Sans"
+      "fontSize": {
+        "value": 13,
+        "type": "fontSize"
       },
-      "type": "typography"
+      "fontFamily": {
+        "value": "Work Sans",
+        "type": "fontFamily"
+      }
     }
   },
   "fontSize": {
