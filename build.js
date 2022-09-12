@@ -19,6 +19,8 @@
 
 const StyleDictionaryPackage = require('style-dictionary');
 const {createArray} = require('./fns');
+const transformedFile = "tokens/transformed/output.json";
+const outputFolder = "output/"
 
 // HAVE THE STYLE DICTIONARY CONFIG DYNAMICALLY GENERATED
 
@@ -42,11 +44,9 @@ StyleDictionaryPackage.registerTransform({
     }
     });
 
-function getStyleDictionaryConfig(theme) {
+function getStyleDictionaryConfig() {
   return {
-    "source": [
-      // `tokens/${theme}.json`,
-      `${theme}.json`,
+    "source": [`${transformedFile}`,
     ],
     "format": {
       createArray
@@ -56,12 +56,12 @@ function getStyleDictionaryConfig(theme) {
         "transforms": ["attribute/cti", "name/cti/kebab", "sizes/px"],
         "buildPath": `output/`,
         "files": [{
-          "destination": `${theme}.json`,
+          "destination": "output.json",
           "format": "createArray"
         }, {
-          "destination": `${theme}.css`,
+          "destination": "output.css",
           "format": "css/variables",
-          "selector": `.${theme}-theme`
+          "selector": ":root"
         }]
       }
     }
@@ -73,17 +73,17 @@ console.log('Build started...');
 // PROCESS THE DESIGN TOKENS FOR THE DIFFEREN BRANDS AND PLATFORMS
 
 // ['global', 'dark', 'light'].map(function (theme) {
-['output'].map(function (theme) {
+// ['output'].map(function (theme) {
 
     console.log('\n==============================================');
-    console.log(`\nProcessing: [${theme}]`);
+    console.log(`\nProcessing: [output.json]`);
 
-    const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(theme));
+    const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig());
 
     StyleDictionary.buildPlatform('web');
 
     console.log('\nEnd processing');
-})
+// })
 
 console.log('\n==============================================');
 console.log('\nBuild completed!');
