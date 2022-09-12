@@ -37,7 +37,7 @@
       }
     }
   },
-  "$background": {
+  "background": {
     "light": {
       "value": "#261700",
       "type": "color"
@@ -47,7 +47,7 @@
       "type": "color"
     }
   },
-  "$text": {
+  "text": {
     "dark": {
       "value": "#fffbed",
       "type": "color"
@@ -77,7 +77,7 @@
     "value": 16,
     "type": "borderRadius"
   },
-  "$sizing": {
+  "sizing": {
     "small": {
       "value": 4,
       "type": "sizing"
@@ -91,7 +91,7 @@
       "type": "sizing"
     }
   },
-  "$spacing": {
+  "spacing": {
     "small": {
       "value": 8,
       "type": "spacing"
@@ -105,7 +105,7 @@
       "type": "spacing"
     }
   },
-  "$color": {
+  "color": {
     "blue-300": {
       "value": "#4758F0",
       "type": "color"
@@ -135,13 +135,13 @@
       "type": "color"
     }
   },
-  "$family": {
+  "family": {
     "work-sans": {
       "value": "Work Sans",
       "type": "fontFamilies"
     }
   },
-  "$font": {
+  "font": {
     "heading1": {
       "value": {
         "fontFamily": "Work Sans",
@@ -158,12 +158,13 @@
     },
     "body": {
       "value": {
-        "fontSize": 13
+        "fontSize": 13,
+        "fontFamily": "Work Sans"
       },
       "type": "typography"
     }
   },
-  "$fontSize": {
+  "fontSize": {
     "heading1": {
       "value": 34,
       "type": "sizing"
@@ -177,7 +178,7 @@
       "type": "sizing"
     }
   },
-  "$weight": {
+  "weight": {
     "bold": {
       "value": "Bold",
       "type": "fontWeights"
@@ -187,7 +188,7 @@
       "type": "fontWeights"
     }
   },
-  "$decoration": {
+  "decoration": {
     "none": {
       "value": "none",
       "type": "textDecoration"
