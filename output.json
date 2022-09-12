@@ -1,70 +1,4 @@
 {
-  "tokenSetOrder": {
-    "0": {
-      "value": "global",
-      "type": "other"
-    },
-    "1": {
-      "value": "light",
-      "type": "other"
-    }
-  },
-  "primary": {
-    "default": {
-      "value": "#963805",
-      "type": "color"
-    },
-    "hover": {
-      "value": "#fffbed",
-      "type": "color"
-    },
-    "active": {
-      "value": "#261700",
-      "type": "color"
-    },
-    "text": {
-      "default": {
-        "value": "#fffbed",
-        "type": "color"
-      },
-      "hover": {
-        "value": "#261700",
-        "type": "color"
-      },
-      "active": {
-        "value": "#fffbed",
-        "type": "color"
-      }
-    }
-  },
-  "background": {
-    "light": {
-      "value": "#261700",
-      "type": "color"
-    },
-    "dark": {
-      "value": "#261700",
-      "type": "color"
-    }
-  },
-  "text": {
-    "dark": {
-      "value": "#fffbed",
-      "type": "color"
-    },
-    "hover": {
-      "value": "#261700",
-      "type": "color"
-    },
-    "active": {
-      "value": "#261700",
-      "type": "color"
-    },
-    "light": {
-      "value": "#fffbed",
-      "type": "color"
-    }
-  },
   "small": {
     "value": 8,
     "type": "borderRadius"
@@ -119,7 +53,7 @@
       "type": "color"
     },
     "white": {
-      "value": "#fffbed",
+      "value": "#fffbec",
       "type": "color"
     },
     "black": {
@@ -198,9 +132,57 @@
       "type": "textDecoration"
     }
   },
+  "primary": {
+    "default": {
+      "value": "#4758F0",
+      "type": "color"
+    },
+    "hover": {
+      "value": "#E3E6FD",
+      "type": "color"
+    },
+    "active": {
+      "value": "#222d90",
+      "type": "color"
+    },
+    "text": {
+      "default": {
+        "value": "#fffbec",
+        "type": "color"
+      },
+      "hover": {
+        "value": "#261700",
+        "type": "color"
+      },
+      "active": {
+        "value": "#fffbec",
+        "type": "color"
+      }
+    }
+  },
   "secondary": {
     "default": {
       "value": "#ffffff00",
+      "type": "color"
+    }
+  },
+  "text": {
+    "light": {
+      "value": "#fffbec",
+      "type": "color"
+    },
+    "dark": {
+      "value": "#261700",
+      "type": "color"
+    }
+  },
+  "background": {
+    "light": {
+      "value": "#fffbec",
+      "type": "color"
+    },
+    "dark": {
+      "value": "#261700",
       "type": "color"
     }
   }
