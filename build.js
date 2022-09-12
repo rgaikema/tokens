@@ -45,8 +45,7 @@ StyleDictionaryPackage.registerTransform({
 function getStyleDictionaryConfig(theme) {
   return {
     "source": [
-      // `tokens/${theme}.json`,
-      `${theme}.json`,
+      `tokens/${theme}.json`,
     ],
     "format": {
       createArray
