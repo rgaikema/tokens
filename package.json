@@ -4,6 +4,9 @@
   "description": "Test for syncing design tokens",
   "main": "index.js",
   "devDependencies": {
+    "autoprefixer": "^10.4.11",
+    "postcss": "^8.4.16",
+    "postcss-import": "^15.0.0",
     "style-dictionary": "^3.7.1",
     "tailwindcss": "^3.1.8",
     "token-transformer": "^0.0.26"
@@ -11,6 +14,7 @@
   "scripts": {
     "build-transform": "npx token-transformer tokens/tokens.json tokens/transformed/output.json global --expandTypography=true",
     "build-sd": "node build.js",
+    "build-tw": "postcss ./styles.css -o ./tailwind.css",
     "build": "npm run build-transform && npm run build-sd"
   },
   "repository": {
@@ -28,5 +32,8 @@
   "bugs": {
     "url": "https://github.com/rgaikema/tokens/issues"
   },
-  "homepage": "https://github.com/rgaikema/tokens#readme"
+  "homepage": "https://github.com/rgaikema/tokens#readme",
+  "dependencies": {
+    "postcss-cli": "^10.0.0"
+  }
 }

@@ -4,8 +4,9 @@ const tokens = require("./output/output.json")
 const colors = filterTokensByType('color', tokens)
 
 module.exports = {
-  purge: [],
-  darkMode: false, // or 'media' or 'class'
+  content: [
+    './index.html'
+  ],
   theme: {
     colors,
   },
